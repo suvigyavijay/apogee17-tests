@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="animating-letters.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="text-wrapper">
+		<div class="letters">
+			<div class="letter-0">
+				<span class="mask">
+				R
+				</span>	
+			</div>
+			<div class="letter-1">
+				<span class="mask">E</span>	
+			</div>
+			<div class="letter-2">
+				<span class="mask">T</span>	
+			</div>
+			<div class="letter-3">
+				<span class="mask">R</span>	
+			</div>
+			<div class="letter-4">
+				<span class="mask">O</span>	
+			</div>
+			
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+$.fn.extend({
+    animateCss: function (animationName, callback) {
+        var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+        this.addClass('animated ' + animationName).one(animationEnd, function() {
+            $(this).removeClass('animated ' + animationName);
+            // console.log(callback);
+            if (callback!=undefined)
+            	callback();
+        });
+    }
+});
+
+$('.mask').animateCss('slideInUp');
+
+</script>
+
+</body>
+</html>
