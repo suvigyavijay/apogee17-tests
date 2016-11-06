@@ -449,25 +449,33 @@ body {
 }
 
 .tile1 {
-    background: url('woman.jpg');
+    background: url('warehouse.jpg');
+    background-repeat: no-repeat;
+    /*background: #abc123;*/
     height: 80vh;
-    background-size: 100% auto;
+    background-size: 100vw auto;
+    background-position-y: -20vh;
 }
 
 .tile2 {
     background-color: #444;
     height: 20vh;
+    background-repeat: no-repeat;
 }
 
 .tile3 {
     background: url('warehouse.jpg');
     height: 80vh;
-    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-size: 100vw auto;
+    background-position-x: -25vw;
 }
 
 .tile4 {
     background: url('warehouse.jpg');
+    background-repeat: no-repeat;
     height: 20vw;
-    background-size: 100% auto;
-    background-position-y: 30vw;
+    background-size: 100vw auto;
+    background-position-y: -66vh;
+    background-position-x: -25vw;
 }
