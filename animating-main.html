@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="animating-letters.css">
+<link rel="stylesheet" type="text/css" href="animating-main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
@@ -11,9 +12,7 @@
 	<div class="text-wrapper">
 		<div class="letters">
 			<div class="letter-0">
-				<span class="mask">
-				R
-				</span>	
+				<span class="mask">R</span>	
 			</div>
 			<div class="letter-1">
 				<span class="mask">E</span>	
@@ -27,7 +26,24 @@
 			<div class="letter-4">
 				<span class="mask">O</span>	
 			</div>
-			
+			<div class="letter-5">
+				<span class="mask">F</span>	
+			</div>
+			<div class="letter-6">
+				<span class="mask">U</span>	
+			</div>
+			<div class="letter-7">
+				<span class="mask">T</span>	
+			</div>
+			<div class="letter-8">
+				<span class="mask">U</span>	
+			</div>
+			<div class="letter-9">
+				<span class="mask">R</span>	
+			</div>
+			<div class="letter-10">
+				<span class="mask">E</span>	
+			</div>
 		</div>
 	</div>
 </div>
@@ -46,7 +62,14 @@ $.fn.extend({
     }
 });
 
-$('.mask').animateCss('slideInUp');
+// $('.mask').animateCss('slideInUp');
+
+
+// setTimeout(function () {
+// $('.mask').animateCss('slideOutUp', function() {
+// 	$('.mask').hide();
+// });
+// },3000)
 
 </script>
 
