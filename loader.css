@@ -487,38 +487,78 @@ body {
     }
 
     20% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+        transform: translate3d(0,-53.63vh,0) rotate(90deg);
     }
 
     21% {   
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+        transform: translate3d(0,-47.84vh,0) rotate(90deg);
     }
 
-    10% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(90deg);
     }
 
-    11% {   
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+    31% {   
+        transform: translate3d(0,-42.05vh,0) rotate(90deg);
     }
 
     40% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+        transform: translate3d(0,-42.05vh,0) rotate(90deg);
     }
 
     41% {   
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+        transform: translate3d(0,-36.26vh,0) rotate(90deg);
     }
 
     50% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
+        transform: translate3d(0,-36.26vh,0) rotate(90deg);
     }
 
     51% {
         transform: translate3d(0,-30.47vh,0) rotate(0deg);
     }
 
+    60% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    61% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
@@ -545,23 +585,87 @@ body {
         opacity: 1;
     }
 
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(180deg);
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(180deg);
     }
 
-    31% {
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(180deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(180deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(180deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(180deg);
+    }
+
+    31% {   
         transform: translate3d(0,-42.05vh,0) rotate(90deg);
     }
 
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(90deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(90deg);
+    }
+
+    50% {
+        transform: translate3d(0,-36.26vh,0) rotate(90deg);
+    }
+
+    51% {
+        transform: translate3d(0,-30.47vh,0) rotate(90deg);
+    }
+
     60% {
-        transform: translate3d(0,-25.26vh,0) rotate(90deg);
+        transform: translate3d(0,-30.47vh,0) rotate(90deg);
     }
 
     61% {
         transform: translate3d(0,-24.68vh,0) rotate(0deg);
     }
 
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
@@ -588,23 +692,87 @@ body {
         opacity: 1;
     }
 
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(-180deg);
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(-180deg);
     }
 
-    31% {
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(-180deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(-180deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(-180deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(-180deg);
+    }
+
+    31% {   
         transform: translate3d(0,-42.05vh,0) rotate(-90deg);
     }
 
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
+    }
+
+    50% {
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
+    }
+
+    51% {
+        transform: translate3d(0,-30.47vh,0) rotate(-90deg);
+    }
+
     60% {
-        transform: translate3d(0,-25.26vh,0) rotate(-90deg);
+        transform: translate3d(0,-30.47vh,0) rotate(-90deg);
     }
 
     61% {
         transform: translate3d(0,-24.68vh,0) rotate(0deg);
     }
 
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
@@ -630,8 +798,88 @@ body {
         opacity: 1;
     }
 
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(0deg);
+    }
+
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(0deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(0deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(0deg);
+    }
+
+    31% {   
+        transform: translate3d(0,-42.05vh,0) rotate(0deg);
+    }
+
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(0deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate3d(0,-36.26vh,0) rotate(0deg);
+    }
+
+    51% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    60% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    61% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
     90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
     100% {
@@ -656,8 +904,88 @@ body {
         opacity: 1;
     }
 
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(0deg);
+    }
+
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(0deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(0deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(0deg);
+    }
+
+    31% {   
+        transform: translate3d(0,-42.05vh,0) rotate(0deg);
+    }
+
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(0deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate3d(0,-36.26vh,0) rotate(0deg);
+    }
+
+    51% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    60% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    61% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
     90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
     100% {
@@ -683,15 +1011,87 @@ body {
         opacity: 1;
     }
 
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(-90deg);
+    }
+
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(-90deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(-90deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(-90deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(-90deg);
+    }
+
+    31% {   
+        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
+    }
+
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
+    }
+
     50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
     }
 
     51% {
         transform: translate3d(0,-30.47vh,0) rotate(0deg);
     }
 
+    60% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    61% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
@@ -718,15 +1118,87 @@ body {
         opacity: 1;
     }
 
+    10% {
+        transform: translate3d(0,-60vh,0) rotate(-90deg);
+    }
+
+    11% {   
+        transform: translate3d(0,-53.63vh,0) rotate(-90deg);
+    }
+
+    20% {
+        transform: translate3d(0,-53.63vh,0) rotate(-90deg);
+    }
+
+    21% {   
+        transform: translate3d(0,-47.84vh,0) rotate(-90deg);
+    }
+
+    30% {
+        transform: translate3d(0,-47.84vh,0) rotate(-90deg);
+    }
+
+    31% {   
+        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
+    }
+
+    40% {
+        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
+    }
+
+    41% {   
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
+    }
+
     50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
+        transform: translate3d(0,-36.26vh,0) rotate(-90deg);
     }
 
     51% {
         transform: translate3d(0,-30.47vh,0) rotate(0deg);
     }
 
+    60% {
+        transform: translate3d(0,-30.47vh,0) rotate(0deg);
+    }
+
+    61% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
@@ -752,15 +1224,87 @@ body {
         opacity: 1;
     }
 
+    10% {
+        transform: translate3d(-5vw,-60vh,0) rotate(0deg);
+    }
+
+    11% {   
+        transform: translate3d(-5vw,-53.63vh,0) rotate(0deg);
+    }
+
+    20% {
+        transform: translate3d(-5vw,-53.63vh,0) rotate(0deg);
+    }
+
+    21% {   
+        transform: translate3d(-5vw,-47.84vh,0) rotate(0deg);
+    }
+
+    30% {
+        transform: translate3d(-5vw,-47.84vh,0) rotate(0deg);
+    }
+
+    31% {   
+        transform: translate3d(-5vw,-42.05vh,0) rotate(0deg);
+    }
+
+    40% {
+        transform: translate3d(-5vw,-42.05vh,0) rotate(0deg);
+    }
+
+    41% {   
+        transform: translate3d(-5vw,-36.26vh,0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate3d(-5vw,-36.26vh,0) rotate(0deg);
+    }
+
+    51% {
+        transform: translate3d(-5vw,-30.47vh,0) rotate(0deg);
+    }
+
     60% {
-        transform: translate3d(-5vw,-25.26vh,0) rotate(0deg);
+        transform: translate3d(-5vw,-30.47vh,0) rotate(0deg);
     }
 
     61% {
         transform: translate3d(0,-24.68vh,0) rotate(0deg);
     }
 
+    70% {
+        transform: translate3d(0,-24.68vh,0) rotate(0deg);
+    }
+
+    71% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    80% {
+        transform: translate3d(0,-18.89vh,0) rotate(0deg);
+    }
+
+    81% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    90% {
+        transform: translate3d(0,-13.10vh,0) rotate(0deg);
+    }
+
+    91% {
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
+    94% {   
+        transform: translate3d(0,-7.31vh,0) rotate(0deg);
+    }
+
     95% {
+        transform: translate3d(0,-5vh,0) rotate(0deg);
+    }
+
+    99% {
         transform: translate3d(0,-5vh,0) rotate(0deg);
     }
 
