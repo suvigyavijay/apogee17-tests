@@ -429,7 +429,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: start;
     width: 100vw;
     height: 100vh;
 }
@@ -438,14 +438,14 @@ body {
     display: flex;
     width: 25vw;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 .grid-wrapper-2 {
     width: 75vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 }
 
 .tile1 {
@@ -474,8 +474,8 @@ body {
 .tile4 {
     background: url('warehouse.jpg');
     background-repeat: no-repeat;
-    height: 20vw;
+    height: 20vh;
     background-size: 100vw auto;
-    background-position-y: -66vh;
+    background-position-y: -80vh;
     background-position-x: -25vw;
 }
