@@ -466,83 +466,83 @@ body {
 }
 
 .letter-0 {
-    transform: translateX(-4em);
+    transform: translate(-4em,1em);
 }
 
 .letter-0 > span {
 }
 
 .letter-1 {
-    transform: translateX(-3.2em);
+    transform: translate(-3.2em,1em);
 }
 
 .letter-1 > span {
 }
 
 .letter-2 {
-    transform: translateX(-2.4em);
+    transform: translate(-2.4em,1em);
 }
 
 .letter-2 > span {
 }
 
 .letter-3 {
-    transform: translateX(-1.6em);
+    transform: translate(-1.6em,1em);
 }
 
 .letter-3 > span {
 }
 
 .letter-4 {
-    transform: translateX(-0.8em);
+    transform: translate(-0.8em,1em);
 }
 
 .letter-4 > span {
 }
 
 .letter-5 {
-    transform: translateX(0.1em);
+    transform: translate(0.1em,1em);
 }
 
 .letter-5 > span {
 }
 
 .letter-6 {
-    transform: translateX(0.8em);
+    transform: translate(0.8em,1em);
 }
 
 .letter-6 > span {
 }
 
 .letter-7 {
-    transform: translateX(1.6em);
+    transform: translate(1.6em,1em);
 }
 
 .letter-7 > span {
 }
 
 .letter-8 {
-    transform: translateX(2.4em);
+    transform: translate(2.4em,1em);
 }
 
 .letter-8 > span {
 }
 
 .letter-9 {
-    transform: translateX(3.2em);
+    transform: translate(3.2em,1em);
 }
 
 .letter-9 > span {
 }
 
 .letter-10 {
-    transform: translateX(4em);
+    transform: translate(4em,1em);
 }
 
 .letter-10 > span {
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
     body {
         font-size: 8px!important;
     }
