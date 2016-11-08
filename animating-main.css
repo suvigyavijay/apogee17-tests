@@ -618,7 +618,7 @@ body {
 }
 
 .letter-5 {
-    /*transform: translate(0.1em,1em);*/
+    /*transform: translate(0em,1em);*/
     animation-name: letter5;
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -633,12 +633,12 @@ body {
     }
 
     50% {
-        transform: translate(0.1em,1em);
+        transform: translate(0em,1em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0.1em,0em);
+        transform: translate(0em,0em);
     }
 }
 
