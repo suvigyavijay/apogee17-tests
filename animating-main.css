@@ -426,6 +426,10 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'MFred';
+    src: url('MFred.woff2') format('woff2');
+}
 
 .container {
     display: flex;
@@ -459,84 +463,326 @@ body {
 }
 
 .mask {
+    font-family: 'MFred',sans-serif;
     /*top:70px;*/
     /*transform: translateY(-70px);*/
     position: absolute;
+    animation-duration: 1s;
     /*transition: transform 10s cubic-bezier(0.5, 0, 0, 1);*/
 }
 
 .letter-0 {
-    transform: translate(-4em,1em);
+    animation-name: letter0;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter0 {
+    from {
+        visibility: hidden;
+        transform: translate(-2em,-3em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(-4em,-3em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-4em,0em);
+    }
 }
 
 .letter-0 > span {
+    animation-delay: 1s;
 }
 
 .letter-1 {
-    transform: translate(-3.2em,1em);
+    /*transform: translate(-3.2em,3em);*/
+    animation-name: letter1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter1 {
+    from {
+        visibility: visible;
+        transform: translate(-4em,3em);
+    }
+
+    50% {
+        transform: translate(-3.2em,3em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-3.2em,0em);
+    }
 }
 
 .letter-1 > span {
 }
 
 .letter-2 {
-    transform: translate(-2.4em,1em);
+    /*transform: translate(-2.4em,0em);*/
+    animation-name: letter2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter2 {
+    from {
+        visibility: visible;
+        transform: translate(0em,0em);
+    }
+
+    50% {
+        transform: translate(-2.4em,0em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-2.4em,0em);
+    }
 }
 
 .letter-2 > span {
 }
 
 .letter-3 {
-    transform: translate(-1.6em,1em);
+    /*transform: translate(-1.6em,2em);*/
+    animation-name: letter3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter3 {
+    from {
+        visibility: hidden;
+        transform: translate(-3em,2em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(-1.6em,2em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-1.6em,0em);
+    }
 }
 
 .letter-3 > span {
+    animation-delay: 1s;
 }
 
 .letter-4 {
-    transform: translate(-0.8em,1em);
+    /*transform: translate(-0.8em,-2em);*/
+    animation-name: letter4;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter4 {
+    from {
+        visibility: hidden;
+        transform: translate(1em,-2em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(-0.8em,-2em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-0.8em,0em);
+    }
 }
 
 .letter-4 > span {
+    animation-delay: 1s;
 }
 
 .letter-5 {
-    transform: translate(0.1em,1em);
+    /*transform: translate(0.1em,1em);*/
+    animation-name: letter5;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter5 {
+    from {
+        visibility: visible;
+        transform: translate(-2em,1em);
+    }
+
+    50% {
+        transform: translate(0.1em,1em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(0.1em,0em);
+    }
 }
 
 .letter-5 > span {
 }
 
 .letter-6 {
-    transform: translate(0.8em,1em);
+    /*transform: translate(0.8em,-1em);*/
+    animation-name: letter6;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter6 {
+    from {
+        visibility: hidden;
+        transform: translate(2em,-1em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(0.8em,-1em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(0.8em,0em);
+    }
 }
 
 .letter-6 > span {
+    animation-delay: 1s;
 }
 
 .letter-7 {
-    transform: translate(1.6em,1em);
+    /*transform: translate(1.6em,3em);*/
+    animation-name: letter7;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter7 {
+    from {
+        visibility: visible;
+        transform: translate(0em,3em);
+    }
+
+    50% {
+        transform: translate(1.6em,3em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(1.6em,0em);
+    }
 }
 
 .letter-7 > span {
 }
 
 .letter-8 {
-    transform: translate(2.4em,1em);
+    /*transform: translate(2.4em,-3em);*/
+    animation-name: letter8;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter8 {
+    from {
+        visibility: hidden;
+        transform: translate(3.6em,-3em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(2.4em,-3em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(2.4em,0em);
+    }
 }
 
 .letter-8 > span {
+    animation-delay: 1s;
 }
 
 .letter-9 {
-    transform: translate(3.2em,1em);
+    /*transform: translate(3.2em,2em);*/
+    animation-name: letter9;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter9 {
+    from {
+        visibility: visible;
+        transform: translate(-2em,2em);
+    }
+
+    50% {
+        transform: translate(3.2em,2em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(3.2em,0em);
+    }
 }
 
 .letter-9 > span {
 }
 
 .letter-10 {
-    transform: translate(4em,1em);
+    /*transform: translate(4em,-1em);*/
+    animation-name: letter10;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter10 {
+    from {
+        visibility: visible;
+        transform: translate(2em,-1em);
+    }
+
+    50% {
+        transform: translate(4em,-1em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(4em,0em);
+    }
 }
 
 .letter-10 > span {
@@ -546,7 +792,9 @@ body {
     body {
         font-size: 8px!important;
     }
-    .text-wrapper{
+
+    .text-wrapper {
         font-size: 435%;
     }
 }
+
