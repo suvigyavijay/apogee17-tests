@@ -428,12 +428,79 @@ body {
 
 .container {
     display: flex;
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw; */
+    /* height: 100vh; */
+    flex-direction: row;
+    justify-content: center;
 }
 
 .metro-wrapper {
-
+    display: flex;
+    /* width: 100vw; */
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.
+.metro {
+    display: flex;
+    width: 60vw;
+    height: 60vh;
+    flex-direction: column;
+}
+
+.row {
+    width: 60vw;
+    height: 20vh;
+    background: #999;
+    display: flex;
+}
+
+.col {
+    width: 20vw;
+    height: 20vh;
+    transition: all 500ms;
+    transform: scale(1);
+}
+
+.scale {
+    transform: scale(10);
+    position: relative;
+    z-index: 99;
+}
+
+#t1 {
+    background: #2ecc71;
+}
+
+#t2 {
+    background: #3498db;
+}
+
+#t3 {
+    background: #9b59b6;
+}
+
+#t4 {
+    background: #27ae60;
+}
+
+#t5 {
+    background: #2980b9;
+}
+
+#t6 {
+    background: #8e44ad;
+}
+
+#t7 {
+    background: #e67e22;
+}
+
+#t8 {
+    background: #e74c3c;
+}
+
+#t9 {
+    background: #ecf0f1;
+}
