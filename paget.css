@@ -459,14 +459,15 @@ body {
 .col {
     width: 20vw;
     height: 20vh;
+    position: relative;
     transition: all 500ms;
     transform: scale(1);
 }
 
 .scale {
     transform: scale(10);
-    position: relative;
-    z-index: 99;
+    /*position: relative;*/
+    /*z-index: 99;*/
 }
 
 #t1 {

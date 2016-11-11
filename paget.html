@@ -46,7 +46,14 @@ $.fn.extend({
 
 
 $('.col').click(function() {
-	$(this).addClass('scale');
+	if ($('.scale')[0]!=undefined) {
+		$('.scale').removeClass('scale');
+		 $(this).css('z-index','0')
+	}
+	else{
+		$(this).addClass('scale');
+		 $(this).css('z-index','99')
+	}
 });
 </script>
 
