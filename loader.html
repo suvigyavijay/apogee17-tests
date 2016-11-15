@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="loader-container">
         <div class="grid">
             <div class="tetris-wrapper">
                 <div class="tetris block-1"></div>
@@ -41,7 +41,8 @@
             $('.tetris-wrapper').html(animation);
         }, 7000);
 
-        // $(window).load(function() {
+        window.onload = function() {
+            console.log('bla');
             clearInterval(repeatLoader);
             setTimeout(function() {
                 $('.overlay').animate({width:'100%'}, 1000);
@@ -51,7 +52,7 @@
                     $('.overlay').animate({width:'0%'}, 1000);
                 },1000)
             }, 7000)
-        // });
+        };
     </script>
 </body>
 </html>

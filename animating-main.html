@@ -7,67 +7,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 <body>
-
-	<div class="container">
-		<div class="text-wrapper">
-			<div class="letters" id="apogee">
-				<div class="lettera-0">
-					<span class="mask animated slideInUp">A</span>	
-				</div>
-				<div class="lettera-1">
-					<span class="mask animated slideInRight">P</span>	
-				</div>
-				<div class="lettera-2">
-					<span class="mask animated slideInLeft">O</span>	
-				</div>
-				<div class="lettera-3">
-					<span class="mask animated slideInUp">G</span>	
-				</div>
-				<div class="lettera-4">
-					<span class="mask animated slideInDown">E</span>	
-				</div>
-				<div class="lettera-5">
-					<span class="mask animated slideInRight">E</span>	
-				</div>
+	<div class="loader-container">
+		<div class="grid">
+			<div class="tetris-wrapper">
+				<div class="tetris block-1"></div>
+				<div class="tetris block-2"></div>
+				<div class="tetris block-3"></div>
+				<div class="tetris block-4"></div>
+				<div class="tetris block-5"></div>
+				<div class="tetris block-6"></div>
+				<div class="tetris block-7"></div>
+				<div class="tetris block-8"></div>
+				<div class="overlay"></div>
 			</div>
-			<div class="letters" id="retrofuture">
-				<div class="letter-0">
-					<span class="mask animated slideInUp">R</span>	
-				</div>
-				<div class="letter-1">
-					<span class="mask animated slideInRight">E</span>	
-				</div>
-				<div class="letter-2">
-					<span class="mask animated slideInLeft">T</span>	
-				</div>
-				<div class="letter-3">
-					<span class="mask animated slideInUp">R</span>	
-				</div>
-				<div class="letter-4">
-					<span class="mask animated slideInDown">O</span>	
-				</div>
-				<div class="letter-5">
-					<span class="mask animated slideInRight">F</span>	
-				</div>
-				<div class="letter-6">
-					<span class="mask animated slideInUp">U</span>	
-				</div>
-				<div class="letter-7">
-					<span class="mask animated slideInLeft">T</span>	
-				</div>
-				<div class="letter-8">
-					<span class="mask animated slideInDown">U</span>	
-				</div>
-				<div class="letter-9">
-					<span class="mask animated slideInLeft">R</span>	
-				</div>
-				<div class="letter-10">
-					<span class="mask animated slideInRight">E</span>	
-				</div>
-			</div>
-			<div class="letters" id="the">THE</div>
 		</div>
 	</div>
+
+	<div class="anim-container">
+		 </div>
 
 	<script type="text/javascript">
 
@@ -83,37 +40,55 @@
 			}
 		});
 
-		setTimeout(function() {
-			for (var i = 0; i < 5; i++) {
-				$('lettera-'+i).css($('lettera-'+i).css('transform'));
-			};
-			for (var i = 0; i < 9; i++) {
-				$('letter-'+i).css($('letter-'+i).css('transform'));
-			}
-		}, 3000);
-// $('.mask').animateCss('slideInUp');
-// setTimeout(function () {
-// $('.mask').animateCss('slideOutUp', function() {
-// 	$('.mask').hide();
-// });
-// },3000)
+		var repeatLoader = setInterval(function() {
+			var animation = $('.tetris-wrapper').html();
+			$('.tetris').remove();
+			$('.tetris-wrapper').html(animation);
+		}, 7000);
 
-// setTimeout(function() {
-// },2000);
+		window.onload = function() {
+			// console.log('bla');
+			clearInterval(repeatLoader);
+			setTimeout(function() {
+				$('.overlay').animate({width:'100%'}, 1000);
+				setTimeout(function(){
+					$('.tetris').hide();
+					$('.overlay').css('float','right');
+					$('.overlay').animate({width:'0%'}, 1000);
+					setTimeout(function() {
+						$('.loader-container').hide();
+						var i=0;
+						$('.anim-container').css('display', 'flex');
+						var html = '<div class="text-wrapper"> <div class="letters" id="apogee"> <div class="lettera-0"> <span class="mask animated slideInUp">A</span> </div> <div class="lettera-1"> <span class="mask animated slideInRight">P</span> </div> <div class="lettera-2"> <span class="mask animated slideInLeft">O</span> </div> <div class="lettera-3"> <span class="mask animated slideInUp">G</span> </div> <div class="lettera-4"> <span class="mask animated slideInDown">E</span> </div> <div class="lettera-5"> <span class="mask animated slideInRight">E</span> </div> </div> <div class="letters" id="retrofuture"> <div class="letter-0"> <span class="mask animated slideInUp">R</span> </div> <div class="letter-1"> <span class="mask animated slideInRight">E</span> </div> <div class="letter-2"> <span class="mask animated slideInLeft">T</span> </div> <div class="letter-3"> <span class="mask animated slideInUp">R</span> </div> <div class="letter-4"> <span class="mask animated slideInDown">O</span> </div> <div class="letter-5"> <span class="mask animated slideInRight">F</span> </div> <div class="letter-6"> <span class="mask animated slideInUp">U</span> </div> <div class="letter-7"> <span class="mask animated slideInLeft">T</span> </div> <div class="letter-8"> <span class="mask animated slideInDown">U</span> </div> <div class="letter-9"> <span class="mask animated slideInLeft">R</span> </div> <div class="letter-10"> <span class="mask animated slideInRight">E</span> </div> </div> <div class="letters" id="the">THE</div> </div>';
+						// $('.anim-container').show();
+						$('.anim-container').html(html);
+						setTimeout(function push() {
+							// console.log('whatever');
+							$('#the').fadeIn(500);
+							i+=0.01;
+							$('#apogee').css('transform','translateY(-'+i+'em)');
+							$('#retrofuture').css('transform','translateY('+i+'em)');
+							if (i<0.3)
+								requestAnimationFrame(push);
+						}, 2000)
+					},1000);
+				},1000)
+			}, 7000)
+		};
 
-var i=0;
+		var i=0;
+		$('.anim-container').css('display', 'flex');
+		setTimeout(function push() {
+			console.log('whatever');
+			$('#the').fadeIn(500);
+			i+=0.01;
+			$('#apogee').css('transform','translateY(-'+i+'em)');
+			$('#retrofuture').css('transform','translateY('+i+'em)');
+			if (i<0.3)
+				requestAnimationFrame(push);
+		}, 2000)
 
-setTimeout(function push() {
-	console.log('whatever');
-	$('#the').fadeIn(500);
-		i+=0.01;
-		$('#apogee').css('transform','translateY(-'+i+'em)');
-		$('#retrofuture').css('transform','translateY('+i+'em)');
-		if (i<0.3)
-			requestAnimationFrame(push);
-}, 2000)
-
-</script>
+	</script>
 
 </body>
 </html>
