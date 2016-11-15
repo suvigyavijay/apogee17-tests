@@ -8,27 +8,31 @@
 </head>
 <body>
 
-	<div class="container">
+	<div class="pp-container">
 		<div class="row">
-			<div class="title t1"></div>
 			<img class="attached-image ai1" src="bla.png">
-			<div class="info i1">
-				Paper presentation forms the core event of APOGEE that showcases a wide range of technical and review papers on a spectrum of topics ranging from industrial applications to the very latest scientific innovations. Submit your paper abstracts before 14th December 2016 !
-			</div>
-			<div class="link l1">
-				<a href="#">Click Here to Know More...</a>
+			<div class="text1">
+				<div class="title t1"></div>
+				<div class="info i1">
+
+				</div>
+				<div class="link l1">
+					<a href="#">Click Here to Know More...</a>
+				</div>
 			</div>
 		</div>
 		<br clear="all">
 		<br>
 		<div class="row">
-			<div class="title t2">PROJECTS</div>
 			<img class="attached-image ai2" src="bla.png">
+			<div class="text2">
+			<div class="title t2"></div>
 			<div class="info i2">
-				APOGEE exhibits over 550 projects in various fields of science and engineering. Based on practical application, they showcase unparalleled excellence. Some of the categories of Projects include Electronics, Environment, Software Development and Mathematical Modelling..
+				
 			</div>
 			<div class="link l2">
 				<a href="#">Click Here to Know More...</a>
+			</div>
 			</div>
 		</div>
 	</div>
@@ -50,41 +54,64 @@
 		function generateHeading(heading) {
 			var html;
 			html = '<div class="letters">';
-			for (var i = 0; i < heading.length-1; i++) {
-				html += '<div class="letterh-'+i+'" style="animation-delay:'+i*50+'ms"> <span class="mask">'+heading[i]+'</span> </div>'; 
+			for (var i = 0; i < heading.length; i++) {
+				if (heading[i]==' ')
+					html += '<div class="letterh-'+i+'" style="animation-delay:'+i*50+'ms"> <span class="mask">&nbsp;</span> </div>'; 
+				else
+					html += '<div class="letterh-'+i+'" style="animation-delay:'+i*50+'ms"> <span class="mask">'+heading[i]+'</span> </div>'; 
 			}
 			html += '</div>';
 			return html;
 		}
 
 		function animateHeading(heading) {
-			for (var i = 0; i < heading.length-1; i++) {
-					$('.letterh-'+i).animateCss('slideInUp');
+			for (var i = 0; i < heading.length; i++) {
+				$('.letterh-'+i).animateCss('slideInUp');
 			};
 		}
 
-		// function generateHeading(heading) {
-		// 	var html;
-		// 	html = '<div class="letters">';
-		// 	for (var i = 0; i < heading.length-1; i++) {
-		// 		html += '<div class="letteri-'+i+'"> <span class="mask">'+heading[i]+'</span> </div>'; 
-		// 	}
-		// 	html += '</div>';
-		// 	return html;
-		// }
+		function generatePara(words) {
+			var html;
+			html = '<div class="letters">';
+			for (var i = 0; i < words.length; i++) {
+				html += '<div class="words-'+i+'" style="animation-delay:'+i*10+'ms"> <span class="mask">'+words[i]+'</span> </div>';
+				html += '<div class="space-'+i+'" style="animation-delay:'+i*10+'ms"> <span class="mask">&nbsp;</span> </div>'; 
+			}
+			html += '</div>';
+			return html;
+		}
 
-		// function animateHeading(heading) {
-		// 	for (var i = 0; i < heading.length-1; i++) {
-		// 		setTimeout(function() {
-		// 			$('.letteri-'+i).animateCss('slideInUp');
-		// 		},i*50);
-		// 	};
-		// }
+		function animatePara(wordslength) {
+			for (var i = 0; i < wordslength; i++) {
+				$('.words-'+i).hide();
+				$('.words-'+i).fadeIn();
+				$('.words-'+i).animateCss('slideInUp');
+			};
+		}
 
 		$('.t1').hide();
 		$('.t1').html(generateHeading('PAPER PRESENTATION'));
 		$('.t1').show();
 		animateHeading('PAPER PRESENTATION');
+
+		$('.i1').hide();
+		var info1 = 'Paper presentation forms the core event of APOGEE that showcases a wide range of technical and review papers on a spectrum of topics ranging from industrial applications to the very latest scientific innovations. Submit your paper abstracts before 14th December 2016 !';
+		var words1 = info1.split(' ');
+		$('.i1').html(generatePara(words1));
+		$('.i1').show();
+		animatePara(words1.length);
+
+		$('.t2').hide();
+		$('.t2').html(generateHeading('PROJECTS'));
+		$('.t2').show();
+		animateHeading('PROJECTS');
+
+		$('.i2').hide();
+		var info1 = 'APOGEE exhibits over 550 projects in various fields of science and engineering. Based on practical application, they showcase unparalleled excellence. Some of the categories of Projects include Electronics, Environment, Software Development and Mathematical Modelling..';
+		var words1 = info1.split(' ');
+		$('.i2').html(generatePara(words1));
+		$('.i2').show();
+		animatePara(words1.length);
 
 
 

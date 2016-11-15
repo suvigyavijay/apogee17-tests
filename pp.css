@@ -445,6 +445,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     overflow: hidden;
+    line-height: 1.6;
 }
 
 .mask {
@@ -464,8 +465,17 @@ body {
 .link {
 }
 
+.text1 {
+    width:100%;
+}
+
+.text2 {
+    width:100%;
+}
+
 .t1 {
     text-align: right;
+    /*float: right;*/
 }
 
 .t2 {
@@ -473,6 +483,7 @@ body {
 }
 
 .i1 {
+    /*clear:right;*/
     text-align: right;
 }
 
@@ -488,12 +499,16 @@ body {
 }
 
 .ai1 {
+    float: left;
+}
+
+.ai2 {
     float: right;
 }
 
 .attached-image {
-    width: 15vw;
-    float: right;
+    width: 22%;
+    /* float: right; */
     margin: 0 20px;
 }
 
@@ -503,8 +518,10 @@ body {
     }
 
     .attached-image {
+        clear: both;
         float: none!important;
         width: 50vw;
         /* margin: 0 auto; */
     }
 }
+
