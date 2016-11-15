@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="pp.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="title t1"></div>
+			<img class="attached-image ai1" src="bla.png">
+			<div class="info i1">
+				Paper presentation forms the core event of APOGEE that showcases a wide range of technical and review papers on a spectrum of topics ranging from industrial applications to the very latest scientific innovations. Submit your paper abstracts before 14th December 2016 !
+			</div>
+			<div class="link l1">
+				<a href="#">Click Here to Know More...</a>
+			</div>
+		</div>
+		<br clear="all">
+		<br>
+		<div class="row">
+			<div class="title t2">PROJECTS</div>
+			<img class="attached-image ai2" src="bla.png">
+			<div class="info i2">
+				APOGEE exhibits over 550 projects in various fields of science and engineering. Based on practical application, they showcase unparalleled excellence. Some of the categories of Projects include Electronics, Environment, Software Development and Mathematical Modelling..
+			</div>
+			<div class="link l2">
+				<a href="#">Click Here to Know More...</a>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+
+		$.fn.extend({
+			animateCss: function (animationName, callback) {
+				var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+				this.addClass('animated ' + animationName).one(animationEnd, function() {
+					$(this).removeClass('animated ' + animationName);
+            // console.log(callback);
+            if (callback!=undefined)
+            	callback();
+        });
+			}
+		});
+
+		function generateHeading(heading) {
+			var html;
+			html = '<div class="letters">';
+			for (var i = 0; i < heading.length-1; i++) {
+				html += '<div class="letterh-'+i+'" style="animation-delay:'+i*50+'ms"> <span class="mask">'+heading[i]+'</span> </div>'; 
+			}
+			html += '</div>';
+			return html;
+		}
+
+		function animateHeading(heading) {
+			for (var i = 0; i < heading.length-1; i++) {
+					$('.letterh-'+i).animateCss('slideInUp');
+			};
+		}
+
+		// function generateHeading(heading) {
+		// 	var html;
+		// 	html = '<div class="letters">';
+		// 	for (var i = 0; i < heading.length-1; i++) {
+		// 		html += '<div class="letteri-'+i+'"> <span class="mask">'+heading[i]+'</span> </div>'; 
+		// 	}
+		// 	html += '</div>';
+		// 	return html;
+		// }
+
+		// function animateHeading(heading) {
+		// 	for (var i = 0; i < heading.length-1; i++) {
+		// 		setTimeout(function() {
+		// 			$('.letteri-'+i).animateCss('slideInUp');
+		// 		},i*50);
+		// 	};
+		// }
+
+		$('.t1').hide();
+		$('.t1').html(generateHeading('PAPER PRESENTATION'));
+		$('.t1').show();
+		animateHeading('PAPER PRESENTATION');
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>

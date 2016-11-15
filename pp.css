@@ -418,7 +418,6 @@ template {
 html, body {
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 body {
@@ -426,325 +425,86 @@ body {
     color: white;
 }
 
+@font-face {
+    font-family: 'MFred';
+    src: url('MFred.woff2') format('woff2');
+}
+
+.row {
+    text-align: center;
+}
+
 .container {
-    width: 100vw;
-    height: 100vh;
+    font-family: sans-serif;
+    width: 80vw;
+    margin: 10vh auto;
+}
+
+.letters {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 
-.grid {
-    max-width: 397px;
-    width: calc(397em / 30);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.mask {
+    /*overflow: hidden;*/
 }
 
-.tetris-wrapper {
-    /* width: 397px; */
-    /* height: 343px; */
-    width: calc(397em / 30);
-    height: calc(343em / 30);
-    max-width: 397px;
-    max-height: 343px;
+.title {
+    font-size: 2.5em;
 }
 
-.tetris {
-    position: absolute;
-    width: calc(397em / 30);
-    height: calc(343em / 30);
-    max-width: 397px;
-    max-height: 343px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* top: 21%; */
+.info {
+    text-align: justify;
+    /* width: 88%; */
+    margin: 10px 0 10px 0;
 }
 
-.overlay {
-    position: relative;
-    z-index:9;
-    width: 0%;
-    height: 100%;
-    background: #FFF;
-
+.link {
 }
 
-
-
-.block-1 {
-    background-image: url('tetris/tetrisb1-01.png');
-    animation-name: block1;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    transform-origin: calc(270.5em / 30) calc(318em / 30);
+.t1 {
+    text-align: right;
 }
 
-@keyframes block1 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
+.t2 {
+    text-align: left;
 }
 
-.block-2 {
-    background-image: url('tetris/tetrisb2-01.png');
-    animation-name: block2;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(302.5em / 30) calc(288.5em / 30);
+.i1 {
+    text-align: right;
 }
 
-@keyframes block2 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(180deg);
-        opacity: 1;
-    }
-
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(180deg);
-    }
-
-    31% {
-        transform: translate3d(0,-42.05vh,0) rotate(90deg);
-    }
-
-    60% {
-        transform: translate3d(0,-25.26vh,0) rotate(90deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
+.i2 {
 }
 
-.block-3 {
-    background-image: url('tetris/tetrisb3-01.png');
-    animation-name: block3;
-    animation-duration: 1.5s;
-    animation-delay: 1.8s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(103em / 30) calc(261em / 30);
+.l1 {
+    text-align: right;
 }
 
-@keyframes block3 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-180deg);
-        opacity: 1;
-    }
-
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(-180deg);
-    }
-
-    31% {
-        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
-    }
-
-    60% {
-        transform: translate3d(0,-25.26vh,0) rotate(-90deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
+.l2 {
+    text-align: left;
 }
 
-.block-4 {
-    background-image: url('tetris/tetrisb4-01.png');
-    animation-name: block4;
-    animation-duration: 0.8s;
-    animation-delay: 3s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
+.ai1 {
+    float: right;
 }
 
-@keyframes block4 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
+.attached-image {
+    width: 15vw;
+    float: right;
+    margin: 0 20px;
 }
 
-.block-5 {
-    background-image: url('tetris/tetrisb5-01.png');
-    animation-name: block5;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block5 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(0deg);
-        opacity: 1;
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 8px!important;
     }
 
-    90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-6 {
-    background-image: url('tetris/tetrisb6-01.png');
-    animation-name: block6;
-    animation-duration: 1.3s;
-    animation-delay: 3.2s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(62em / 30) calc(172.5em / 30);
-}
-
-@keyframes block6 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-7 {
-    background-image: url('tetris/tetrisb7-01.png');
-    animation-name: block7;
-    animation-duration: 1s;
-    animation-delay: 4.5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(335.5em / 30) calc(113.5em / 30);
-}
-
-@keyframes block7 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-8 {
-    background-image: url('tetris/tetrisb8-01.png');
-    animation-name: block8;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block8 {
-    from {
-        transform: translate3d(-5vw,-60vh,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    60% {
-        transform: translate3d(-5vw,-25.26vh,0) rotate(0deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
+    .attached-image {
+        float: none!important;
+        width: 50vw;
+        /* margin: 0 auto; */
     }
 }

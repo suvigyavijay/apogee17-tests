@@ -10,7 +10,27 @@
 
 <div class="container">
 	<div class="text-wrapper">
-		<div class="letters">
+		<div class="letters" id="apogee">
+			<div class="lettera-0">
+				<span class="mask animated slideInUp">A</span>	
+			</div>
+			<div class="lettera-1">
+				<span class="mask animated slideInRight">P</span>	
+			</div>
+			<div class="lettera-2">
+				<span class="mask animated slideInLeft">O</span>	
+			</div>
+			<div class="lettera-3">
+				<span class="mask animated slideInUp">G</span>	
+			</div>
+			<div class="lettera-4">
+				<span class="mask animated slideInDown">E</span>	
+			</div>
+			<div class="lettera-5">
+				<span class="mask animated slideInRight">E</span>	
+			</div>
+		</div>
+		<div class="letters" id="retrofuture">
 			<div class="letter-0">
 				<span class="mask animated slideInUp">R</span>	
 			</div>
@@ -61,6 +81,15 @@ $.fn.extend({
         });
     }
 });
+
+setTimeout(function() {
+	for (var i = 0; i < 5; i++) {
+		$('lettera-'+i).css($('lettera-'+i).css('transform'));
+	};
+	for (var i = 0; i < 9; i++) {
+		$('letter-'+i).css($('letter-'+i).css('transform'));
+	}
+}, 3000);
 // $('.mask').animateCss('slideInUp');
 // setTimeout(function () {
 // $('.mask').animateCss('slideOutUp', function() {

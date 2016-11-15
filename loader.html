@@ -17,6 +17,7 @@
                 <div class="tetris block-6"></div>
                 <div class="tetris block-7"></div>
                 <div class="tetris block-8"></div>
+                <div class="overlay"></div>
             </div>
         </div>
     </div>
@@ -33,6 +34,24 @@
         });
             }
         });
+
+        var repeatLoader = setInterval(function() {
+            var animation = $('.tetris-wrapper').html();
+            $('.tetris').remove();
+            $('.tetris-wrapper').html(animation);
+        }, 7000);
+
+        // $(window).load(function() {
+            clearInterval(repeatLoader);
+            setTimeout(function() {
+                $('.overlay').animate({width:'100%'}, 1000);
+                setTimeout(function(){
+                    $('.tetris').hide();
+                    $('.overlay').css('float','right');
+                    $('.overlay').animate({width:'0%'}, 1000);
+                },1000)
+            }, 7000)
+        // });
     </script>
 </body>
 </html>

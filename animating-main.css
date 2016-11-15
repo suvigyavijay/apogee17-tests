@@ -472,6 +472,181 @@ body {
     /*transition: transform 10s cubic-bezier(0.5, 0, 0, 1);*/
 }
 
+.lettera-0 {
+    animation-name: lettera0;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes lettera0 {
+    from {
+        visibility: hidden;
+        transform: translate(-2em,-3.5em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(-2em,-3.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-2em,-0.5em);
+    }
+}
+
+.lettera-0 > span {
+    animation-delay: 1s;
+}
+
+.lettera-1 {
+    /*transform: translate(-3.2em,3em);*/
+    animation-name: lettera1;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes lettera1 {
+    from {
+        visibility: visible;
+        transform: translate(-4em,2.5em);
+    }
+
+    50% {
+        transform: translate(-1.2em,2.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-1.2em,-0.5em);
+    }
+}
+
+.lettera-1 > span {
+}
+
+.lettera-2 {
+    /*transform: translate(-2.4em,0em);*/
+    animation-name: lettera2;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes lettera2 {
+    from {
+        visibility: visible;
+        transform: translate(0em,-0.5em);
+    }
+
+    50% {
+        transform: translate(-0.4em,-0.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(-0.4em,-0.5em);
+    }
+}
+
+.lettera-2 > span {
+}
+
+.lettera-3 {
+    /*transform: translate(-1.6em,2em);*/
+    animation-name: lettera3;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes lettera3 {
+    from {
+        visibility: hidden;
+        transform: translate(-3em,1.5em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(0.4em,1.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(0.4em,-0.5em);
+    }
+}
+
+.lettera-3 > span {
+    animation-delay: 1s;
+}
+
+.lettera-4 {
+    /*transform: translate(-0.8em,-2em);*/
+    animation-name: lettera4;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translate(1.2em,-0.5em);
+}
+
+@keyframes lettera4 {
+    from {
+        visibility: hidden;
+        transform: translate(1em,-2.5em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(1.2em,-2.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(1.2em,-0.5em);
+    }
+}
+
+.lettera-4 > span {
+    animation-delay: 1s;
+}
+
+.lettera-5 {
+    /*transform: translate(0em,1em);*/
+    animation-name: lettera5;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translate(2em,-0.5em);
+}
+
+@keyframes lettera5 {
+    from {
+        visibility: visible;
+        transform: translate(-2em,0.5em);
+    }
+
+    50% {
+        transform: translate(2em,0.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(2em,-0.5em);
+    }
+}
+
+.lettera-5 > span {
+}
+
 .letter-0 {
     animation-name: letter0;
     animation-duration: 2s;
@@ -483,17 +658,17 @@ body {
 @keyframes letter0 {
     from {
         visibility: hidden;
-        transform: translate(-2em,-3em);
+        transform: translate(-2em,-2.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(-4em,-3em);
+        transform: translate(-4em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-4em,0em);
+        transform: translate(-4em,0.5em);
     }
 }
 
@@ -513,16 +688,16 @@ body {
 @keyframes letter1 {
     from {
         visibility: visible;
-        transform: translate(-4em,3em);
+        transform: translate(-4em,3.5em);
     }
 
     50% {
-        transform: translate(-3.2em,3em);
+        transform: translate(-3.2em,3.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-3.2em,0em);
+        transform: translate(-3.2em,0.5em);
     }
 }
 
@@ -541,16 +716,16 @@ body {
 @keyframes letter2 {
     from {
         visibility: visible;
-        transform: translate(0em,0em);
+        transform: translate(0em,0.5em);
     }
 
     50% {
-        transform: translate(-2.4em,0em);
+        transform: translate(-2.4em,0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-2.4em,0em);
+        transform: translate(-2.4em,0.5em);
     }
 }
 
@@ -569,17 +744,17 @@ body {
 @keyframes letter3 {
     from {
         visibility: hidden;
-        transform: translate(-3em,2em);
+        transform: translate(-3em,2.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(-1.6em,2em);
+        transform: translate(-1.6em,2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-1.6em,0em);
+        transform: translate(-1.6em,0.5em);
     }
 }
 
@@ -599,17 +774,17 @@ body {
 @keyframes letter4 {
     from {
         visibility: hidden;
-        transform: translate(1em,-2em);
+        transform: translate(1em,-1.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(-0.8em,-2em);
+        transform: translate(-0.8em,-1.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-0.8em,0em);
+        transform: translate(-0.8em,0.5em);
     }
 }
 
@@ -629,16 +804,16 @@ body {
 @keyframes letter5 {
     from {
         visibility: visible;
-        transform: translate(-2em,1em);
+        transform: translate(-2em,1.5em);
     }
 
     50% {
-        transform: translate(0em,1em);
+        transform: translate(0em,1.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0em,0em);
+        transform: translate(0em,0.5em);
     }
 }
 
@@ -657,17 +832,17 @@ body {
 @keyframes letter6 {
     from {
         visibility: hidden;
-        transform: translate(2em,-1em);
+        transform: translate(2em,-0.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(0.8em,-1em);
+        transform: translate(0.8em,-0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0.8em,0em);
+        transform: translate(0.8em,0.5em);
     }
 }
 
@@ -687,16 +862,16 @@ body {
 @keyframes letter7 {
     from {
         visibility: visible;
-        transform: translate(0em,3em);
+        transform: translate(0em,3.5em);
     }
 
     50% {
-        transform: translate(1.6em,3em);
+        transform: translate(1.6em,3.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(1.6em,0em);
+        transform: translate(1.6em,0.5em);
     }
 }
 
@@ -715,17 +890,17 @@ body {
 @keyframes letter8 {
     from {
         visibility: hidden;
-        transform: translate(3.6em,-3em);
+        transform: translate(3.6em,-2.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(2.4em,-3em);
+        transform: translate(2.4em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(2.4em,0em);
+        transform: translate(2.4em,0.5em);
     }
 }
 
@@ -745,16 +920,16 @@ body {
 @keyframes letter9 {
     from {
         visibility: visible;
-        transform: translate(-2em,2em);
+        transform: translate(-2em,2.5em);
     }
 
     50% {
-        transform: translate(3.2em,2em);
+        transform: translate(3.2em,2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(3.2em,0em);
+        transform: translate(3.2em,0.5em);
     }
 }
 
@@ -768,25 +943,51 @@ body {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     visibility: hidden;
+    transform: translate(4em,0.5em);
 }
 
 @keyframes letter10 {
     from {
         visibility: visible;
-        transform: translate(2em,-1em);
+        transform: translate(2em,-0.5em);
     }
 
     50% {
-        transform: translate(4em,-1em);
+        transform: translate(4em,-0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(4em,0em);
+        transform: translate(4em,0.5em);
     }
 }
 
 .letter-10 > span {
+}
+
+/*#apogee > div {
+    animation-delay: 2s;
+    animation-name: push-apogee;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}*/
+
+/*@keyframes push-apogee {
+    from {
+        visibility: visible;
+        transform: translateY(-0.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(-1em);
+    }
+}
+*/
+#retrofuture {
+    animation-delay: 2s;
+    animation-name: push-retrofuture;
+    animation-duration: 0.5s;
 }
 
 @media only screen and (max-width: 600px) {
@@ -798,4 +999,5 @@ body {
         font-size: 435%;
     }
 }
+
 
