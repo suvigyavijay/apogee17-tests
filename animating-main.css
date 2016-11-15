@@ -440,12 +440,17 @@ body {
     flex-direction: column;
 }
 
+
+
 .text-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: 'Lato Black',sans-serif;
     font-size: 562%;
+    font-family: 'MFred',sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
 }
 
 .letters {
@@ -965,13 +970,20 @@ body {
 .letter-10 > span {
 }
 
+#the {
+    position: fixed;
+     display: none; 
+    font-size: 0.6em;
+    text-align: center;
+    margin: 0.35em 0 0 0.65em;
+}
+
 /*#apogee > div {
     animation-delay: 2s;
     animation-name: push-apogee;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }*/
-
 /*@keyframes push-apogee {
     from {
         visibility: visible;
@@ -984,12 +996,24 @@ body {
     }
 }
 */
-#retrofuture {
+/*#retrofuture {
     animation-delay: 2s;
     animation-name: push-retrofuture;
     animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
+@keyframes push-retrofuture {
+    from {
+        transform: translateY(0em);
+    }
+    100% {
+        transform: translateY(0.5em);
+    }
+}*/
+/*#jaadu {
+    display: none;
+}*/
 @media only screen and (max-width: 600px) {
     body {
         font-size: 8px!important;
@@ -999,5 +1023,3 @@ body {
         font-size: 435%;
     }
 }
-
-
