@@ -431,333 +431,8 @@ body {
     src: url('MFred.woff2') format('woff2');
 }
 
-.loader-container {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.grid {
-    max-width: 397px;
-    width: calc(397em / 30);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.tetris-wrapper {
-    /* width: 397px; */
-    /* height: 343px; */
-    width: calc(397em / 30);
-    height: calc(343em / 30);
-    max-width: 397px;
-    max-height: 343px;
-}
-
-.tetris {
-    position: absolute;
-    width: calc(397em / 30);
-    height: calc(343em / 30);
-    max-width: 397px;
-    max-height: 343px;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    /* top: 21%; */
-}
-
-.overlay {
-    position: relative;
-    z-index:9;
-    width: 0%;
-    height: 100%;
-    background: #FFF;
-
-}
-
-
-
-.block-1 {
-    background-image: url('tetris/tetrisb1-01.png');
-    animation-name: block1;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    transform-origin: calc(270.5em / 30) calc(318em / 30);
-}
-
-@keyframes block1 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-2 {
-    background-image: url('tetris/tetrisb2-01.png');
-    animation-name: block2;
-    animation-duration: 1.5s;
-    animation-delay: 1.5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(302.5em / 30) calc(288.5em / 30);
-}
-
-@keyframes block2 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(180deg);
-        opacity: 1;
-    }
-
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(180deg);
-    }
-
-    31% {
-        transform: translate3d(0,-42.05vh,0) rotate(90deg);
-    }
-
-    60% {
-        transform: translate3d(0,-25.26vh,0) rotate(90deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-3 {
-    background-image: url('tetris/tetrisb3-01.png');
-    animation-name: block3;
-    animation-duration: 1.5s;
-    animation-delay: 1.8s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(103em / 30) calc(261em / 30);
-}
-
-@keyframes block3 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-180deg);
-        opacity: 1;
-    }
-
-    30% {
-        transform: translate3d(0,-42.63vh,0) rotate(-180deg);
-    }
-
-    31% {
-        transform: translate3d(0,-42.05vh,0) rotate(-90deg);
-    }
-
-    60% {
-        transform: translate3d(0,-25.26vh,0) rotate(-90deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-4 {
-    background-image: url('tetris/tetrisb4-01.png');
-    animation-name: block4;
-    animation-duration: 0.8s;
-    animation-delay: 3s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block4 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-5 {
-    background-image: url('tetris/tetrisb5-01.png');
-    animation-name: block5;
-    animation-duration: 1s;
-    animation-delay: 4s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block5 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    90% {
-        transform: translate3d(0,-30vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-6 {
-    background-image: url('tetris/tetrisb6-01.png');
-    animation-name: block6;
-    animation-duration: 1.3s;
-    animation-delay: 3.2s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(62em / 30) calc(172.5em / 30);
-}
-
-@keyframes block6 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-7 {
-    background-image: url('tetris/tetrisb7-01.png');
-    animation-name: block7;
-    animation-duration: 1s;
-    animation-delay: 4.5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-    transform-origin: calc(335.5em / 30) calc(113.5em / 30);
-}
-
-@keyframes block7 {
-    from {
-        transform: translate3d(0,-60vh,0) rotate(-90deg);
-        opacity: 1;
-    }
-
-    50% {
-        transform: translate3d(0,-31.05vh,0) rotate(-90deg);
-    }
-
-    51% {
-        transform: translate3d(0,-30.47vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-.block-8 {
-    background-image: url('tetris/tetrisb8-01.png');
-    animation-name: block8;
-    animation-duration: 1.5s;
-    animation-delay: 5s;
-    animation-timing-function: linear;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-@keyframes block8 {
-    from {
-        transform: translate3d(-5vw,-60vh,0) rotate(0deg);
-        opacity: 1;
-    }
-
-    60% {
-        transform: translate3d(-5vw,-25.26vh,0) rotate(0deg);
-    }
-
-    61% {
-        transform: translate3d(0,-24.68vh,0) rotate(0deg);
-    }
-
-    95% {
-        transform: translate3d(0,-5vh,0) rotate(0deg);
-    }
-
-    100% {
-        transform: translate3d(0,0,0) rotate(0deg);
-        opacity: 1;
-    }
-}
-
-
 .anim-container {
     display: flex;
-    display: none;
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
@@ -770,7 +445,7 @@ body {
     flex-direction: row;
     justify-content: center;
     font-family: 'Lato Black',sans-serif;
-    font-size: 562%;
+    font-size: 600%;
     font-family: 'MFred',sans-serif;
     letter-spacing: 0.4em;
     text-align: center;
@@ -810,18 +485,18 @@ body {
 
 @keyframes lettera0 {
     from {
-        visibility: hidden;
-        transform: translate(-2em,-3.5em);
+        visibility: visible;
+        transform: translate(-2.5em,-3em);
     }
 
     50% {
-        visibility: hidden;
-        transform: translate(-2em,-3.5em);
+        visibility: visible;
+        transform: translate(-1.5em,-3em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-2em,-0.5em);
+        transform: translate(-1.5em,-0.5em);
     }
 }
 
@@ -845,12 +520,12 @@ body {
     }
 
     50% {
-        transform: translate(-1.2em,2.5em);
+        transform: translate(-0.9em,2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-1.2em,-0.5em);
+        transform: translate(-0.9em,-0.5em);
     }
 }
 
@@ -873,12 +548,12 @@ body {
     }
 
     50% {
-        transform: translate(-0.4em,-0.5em);
+        transform: translate(-0.3em,-0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-0.4em,-0.5em);
+        transform: translate(-0.3em,-0.5em);
     }
 }
 
@@ -902,12 +577,12 @@ body {
 
     50% {
         visibility: hidden;
-        transform: translate(0.4em,1.5em);
+        transform: translate(0.3em,1.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0.4em,-0.5em);
+        transform: translate(0.3em,-0.5em);
     }
 }
 
@@ -927,18 +602,18 @@ body {
 
 @keyframes lettera4 {
     from {
-        visibility: hidden;
-        transform: translate(1em,-2.5em);
+        visibility: visible;
+        transform: translate(2em,-2.5em);
     }
 
     50% {
-        visibility: hidden;
-        transform: translate(1.2em,-2.5em);
+        visibility: visible;
+        transform: translate(0.9em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(1.2em,-0.5em);
+        transform: translate(0.9em,-0.5em);
     }
 }
 
@@ -963,12 +638,12 @@ body {
     }
 
     50% {
-        transform: translate(2em,0.5em);
+        transform: translate(1.5em,0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(2em,-0.5em);
+        transform: translate(1.5em,-0.5em);
     }
 }
 
@@ -985,18 +660,18 @@ body {
 
 @keyframes letter0 {
     from {
-        visibility: hidden;
+        visibility: visible;
         transform: translate(-2em,-2.5em);
     }
 
     50% {
-        visibility: hidden;
-        transform: translate(-4em,-2.5em);
+        visibility: visible;
+        transform: translate(-4.2em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-4em,0.5em);
+        transform: translate(-4.2em,0.5em);
     }
 }
 
@@ -1016,16 +691,16 @@ body {
 @keyframes letter1 {
     from {
         visibility: visible;
-        transform: translate(-4em,3.5em);
+        transform: translate(-4.5em,3.5em);
     }
 
     50% {
-        transform: translate(-3.2em,3.5em);
+        transform: translate(-3.6em,3.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-3.2em,0.5em);
+        transform: translate(-3.6em,0.5em);
     }
 }
 
@@ -1044,16 +719,16 @@ body {
 @keyframes letter2 {
     from {
         visibility: visible;
-        transform: translate(0em,0.5em);
+        transform: translate(0.5em,0.5em);
     }
 
     50% {
-        transform: translate(-2.4em,0.5em);
+        transform: translate(-3em,0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-2.4em,0.5em);
+        transform: translate(-3em,0.5em);
     }
 }
 
@@ -1072,17 +747,17 @@ body {
 @keyframes letter3 {
     from {
         visibility: hidden;
-        transform: translate(-3em,2.5em);
+        transform: translate(-1em,2.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(-1.6em,2.5em);
+        transform: translate(-2.7em,2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-1.6em,0.5em);
+        transform: translate(-2.7em,0.5em);
     }
 }
 
@@ -1107,12 +782,12 @@ body {
 
     50% {
         visibility: hidden;
-        transform: translate(-0.8em,-1.5em);
+        transform: translate(-2.1em,-1.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(-0.8em,0.5em);
+        transform: translate(-2.1em,0.5em);
     }
 }
 
@@ -1132,16 +807,16 @@ body {
 @keyframes letter5 {
     from {
         visibility: visible;
-        transform: translate(-2em,1.5em);
+        transform: translate(2em,1.5em);
     }
 
     50% {
-        transform: translate(0em,1.5em);
+        transform: translate(-1.5em,1.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0em,0.5em);
+        transform: translate(-1.5em,0.5em);
     }
 }
 
@@ -1160,17 +835,17 @@ body {
 @keyframes letter6 {
     from {
         visibility: hidden;
-        transform: translate(2em,-0.5em);
+        transform: translate(-4em,-2.5em);
     }
 
     50% {
         visibility: hidden;
-        transform: translate(0.8em,-0.5em);
+        transform: translate(-0.9em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(0.8em,0.5em);
+        transform: translate(-0.9em,0.5em);
     }
 }
 
@@ -1190,16 +865,16 @@ body {
 @keyframes letter7 {
     from {
         visibility: visible;
-        transform: translate(0em,3.5em);
+        transform: translate(3em,3.5em);
     }
 
     50% {
-        transform: translate(1.6em,3.5em);
+        transform: translate(-0.3em,3.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(1.6em,0.5em);
+        transform: translate(-0.3em,0.5em);
     }
 }
 
@@ -1223,12 +898,12 @@ body {
 
     50% {
         visibility: hidden;
-        transform: translate(2.4em,-2.5em);
+        transform: translate(0.3em,-2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(2.4em,0.5em);
+        transform: translate(0.3em,0.5em);
     }
 }
 
@@ -1248,16 +923,16 @@ body {
 @keyframes letter9 {
     from {
         visibility: visible;
-        transform: translate(-2em,2.5em);
+        transform: translate(-2.5em,2.5em);
     }
 
     50% {
-        transform: translate(3.2em,2.5em);
+        transform: translate(0.9em,2.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(3.2em,0.5em);
+        transform: translate(0.9em,0.5em);
     }
 }
 
@@ -1277,30 +952,144 @@ body {
 @keyframes letter10 {
     from {
         visibility: visible;
-        transform: translate(2em,-0.5em);
+        transform: translate(4em,-0.5em);
     }
 
     50% {
-        transform: translate(4em,-0.5em);
+        transform: translate(1.5em,-0.5em);
     }
 
     100% {
         visibility: visible;
-        transform: translate(4em,0.5em);
+        transform: translate(1.5em,0.5em);
     }
 }
 
 .letter-10 > span {
 }
 
-#the {
+.letter-11 {
+    /*transform: translate(1.6em,3em);*/
+    animation-name: letter11;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter11 {
+    from {
+        visibility: visible;
+        transform: translate(0em,3.5em);
+    }
+
+    50% {
+        transform: translate(2.1em,3.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(2.1em,0.5em);
+    }
+}
+
+.letter-11 > span {
+}
+
+.letter-12 {
+    /*transform: translate(2.4em,-3em);*/
+    animation-name: letter12;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter12 {
+    from {
+        visibility: hidden;
+        transform: translate(4.6em,-2.5em);
+    }
+
+    50% {
+        visibility: hidden;
+        transform: translate(2.7em,-2.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(2.7em,0.5em);
+    }
+}
+
+.letter-12 > span {
+    animation-delay: 1s;
+}
+
+.letter-13 {
+    /*transform: translate(3.2em,2em);*/
+    animation-name: letter13;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+
+@keyframes letter13 {
+    from {
+        visibility: visible;
+        transform: translate(-1em,2.5em);
+    }
+
+    50% {
+        transform: translate(3.3em,2.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(3.3em,0.5em);
+    }
+}
+
+.letter-13 > span {
+}
+
+.letter-14 {
+    /*transform: translate(4em,-1em);*/
+    animation-name: letter14;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+    transform: translate(4em,0.5em);
+}
+
+@keyframes letter14 {
+    from {
+        visibility: visible;
+        transform: translate(1em,-0.5em);
+    }
+
+    50% {
+        transform: translate(3.9em,-0.5em);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translate(3.9em,0.5em);
+    }
+}
+
+.letter-14 > span {
+}
+
+/*#the {
     position: fixed;
      display: none; 
     font-size: 0.6em;
     text-align: center;
     margin: 0.35em 0 0 0.65em;
-}
-
+}*/
 /*#apogee > div {
     animation-delay: 2s;
     animation-name: push-apogee;
