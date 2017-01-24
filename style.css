@@ -26,4 +26,5 @@ body {
 	z-index: 99;
 	/* overflow: hidden; */
 	clip-path: circle(200px at 300px 300px);
+	transition: all 300ms ease-out;
 }
