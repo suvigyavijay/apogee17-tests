@@ -10,14 +10,14 @@
 		<div class="back retro">
 
 		</div>
-		<div class="front  future">
+		<div class="front future">
 
 		</div>
 	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 		$(document).on("mousemove", function (mousepos) {
-			
+			$('.future').css('clip-path', 'circle(200px at '+mousepos.pageX+'px '+mousepos.pageY+'px)')
 		});
 	</script>
 </body>
