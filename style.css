@@ -7,14 +7,35 @@ body {
 .container {
 	width: 100vw;
 	height: 100vh;
-	background: url(bgFuture.svg);
+	background: url(bg.jpg);
+	background-size: 100% 100%;
+	transition: all 800ms ease-out;
+	clip-path: circle(2000px at 50vw 50vh);
 }
 
 .overlay {
 	position: absolute;
-	z-index: 99;
-	background: rgba(0,0,0,0.6);
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background: rgba(0,0,0,0.7);
 	width: 100vw;
 	height: 100vh;
-	clip-path: circle(300px at 50vw, 50vh);
+	transition: all 800ms ease-out;
+	clip-path: circle(2000px at 50vw 50vh);
 }
+
+.circle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100vw;
+	height: 100vh;
+	background: url(bg.jpg);
+	background-size: 100% 100%;
+	clip-path: circle(200px at 50vw 50vh);
+	transition: all 200ms ease-out;
+	transition-delay: 600ms;
+}
+

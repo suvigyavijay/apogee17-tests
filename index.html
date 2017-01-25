@@ -12,7 +12,19 @@
 	<div class="overlay">
 		
 	</div>
+	<div class="circle">
+		
+	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		$(document).toggle(
+		function() {
+			$('.circle').css('clip-path', 'circle(0px at 50vw 50vh)');
+			$('.overlay').css('clip-path', 'circle(0px at 50vw 50vh)');
+			$('.container').css('clip-path', 'circle(0px at 50vw 50vh)');
+		}, function()
+		)
+	</script>
 </body>
 
 </html>
